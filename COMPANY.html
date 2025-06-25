@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة التبيان للاستشارات والخدمات القانونية</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border-right: 4px solid transparent;
+        }
+        
+        .service-card:hover {
+            border-right-color: #3b82f6;
+            transform: translateX(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+            margin: 2rem 0;
+        }
+        
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        
+        .feature-item {
+            background: rgba(59, 130, 246, 0.05);
+            border-right: 3px solid #3b82f6;
+        }
+        
+        .contact-info {
+            background: linear-gradient(45deg, #f8fafc, #e2e8f0);
+        }
+        
+         {
+            body { print-color-adjust: exact; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center mb-6">
+                <i class="fas fa-balance-scale text-6xl mb-4"></i>
+            </div>
+            <h1 class="text-5xl font-bold mb-4">شركة التبيان</h1>
+            <h2 class="text-3xl font-semibold mb-6">للاستشارات والخدمات القانونية</h2>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                نحن نقدم حلولاً قانونية شاملة ومتطورة تلبي احتياجات عملائنا في جميع أنحاء ليبيا، 
+                من خلال شبكة متميزة من المحامين المتخصصين ومراكز الخدمات المتكاملة
+            </p>
+        </div>
+    </header>
+
+    <!-- Company Identity Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">هويتنا المؤسسية</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Vision -->
+                <div class="text-center p-8 rounded-lg shadow-lg bg-gradient-to-b from-blue-50 to-white">
+                    <div class="icon-circle bg-blue-100 text-blue-600">
+                        <i class="fas fa-eye text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">رؤيتنا</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        أن نكون الشركة الرائدة في مجال الخدمات القانونية في ليبيا، نقدم حلولاً قانونية مبتكرة 
+                        وشاملة تساهم في تطوير المنظومة القانونية وتحقيق العدالة لجميع أفراد المجتمع
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="text-center p-8 rounded-lg shadow-lg bg-gradient-to-b from-green-50 to-white">
+                    <div class="icon-circle bg-green-100 text-green-600">
+                        <i class="fas fa-target text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">رسالتنا</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        نسعى لتقديم خدمات قانونية عالية الجودة من خلال فريق متخصص من المحامين والخبراء، 
+                        مع التركيز على حل المنازعات بطرق ودية وتطوير الكوادر القانونية في ليبيا
+                    </p>
+                </div>
+
+                <!-- Values -->
+                <div class="text-center p-8 rounded-lg shadow-lg bg-gradient-to-b from-purple-50 to-white">
+                    <div class="icon-circle bg-purple-100 text-purple-600">
+                        <i class="fas fa-gem text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">قيمنا</h3>
+                    <div class="text-gray-600 text-right space-y-2">
+                        <div>• النزاهة والشفافية</div>
+                        <div>• التميز في الأداء</div>
+                        <div>• الالتزام بالمواعيد</div>
+                        <div>• السرية المهنية</div>
+                        <div>• العدالة والإنصاف</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">خدماتنا المتكاملة</h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    نقدم مجموعة شاملة من الخدمات القانونية المتخصصة من خلال ثلاثة أقسام رئيسية
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coalition Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center mb-12">
+                <div class="flex-shrink-0 ml-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-2">ائتلاف المحامين الليبي</h2>
+                    <p class="text-xl text-gray-600">شبكة متكاملة من المحامين المتخصصين على مستوى ليبيا</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">آلية العمل</h3>
+                    <div class="space-y-4">
+                        <div class="feature-item p-4 rounded-lg">
+                            <div class="flex items-start">
+                                <i class="fas fa-exchange-alt text-blue-600 text-xl ml-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">نظام تحويل القضايا</h4>
+                                    <p class="text-gray-600">تحويل القضايا حسب الاختصاص المحلي عبر المكتب الرئيسي في طرابلس</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item p-4 rounded-lg">
+                            <div class="flex items-start">
+                                <i class="fas fa-network-wired text-blue-600 text-xl ml-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">التنسيق المركزي</h4>
+                                    <p class="text-gray-600">إدارة مركزية لجميع القضايا مع توزيعها على المكاتب المختصة</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item p-4 rounded-lg">
+                            <div class="flex items-start">
+                                <i class="fas fa-handshake text-blue-600 text-xl ml-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">الشراكة الاستراتيجية</h4>
+                                    <p class="text-gray-600">تعاون وثيق بين جميع أعضاء الائتلاف لضمان أفضل النتائج</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">التخصصات القانونية</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gradient-to-br from-red-50 to-red-100 p-4 rounded-lg text-center">
+                            <i class="fas fa-gavel text-red-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800">القانون الجنائي</h4>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-lg text-center">
+                            <i class="fas fa-building text-blue-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800">القانون المدني</h4>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-lg text-center">
+                            <i class="fas fa-chart-line text-green-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800">القانون التجاري</h4>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg text-center">
+                            <i class="fas fa-hard-hat text-yellow-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800">قانون العمل</h4>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-4 rounded-lg text-center">
+                            <i class="fas fa-university text-indigo-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800">القانون الإداري</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arbitration Center Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center mb-12">
+                <div class="flex-shrink-0 ml-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-balance-scale-right text-green-600 text-2xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-2">مركز التحكيم القانوني</h2>
+                    <p class="text-xl text-gray-600">بديل سريع وفعال لحل المنازعات خارج المحاكم</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">مميزات مركز التحكيم</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <i class="fas fa-clock text-green-600 text-2xl mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">السرعة في الإنجاز</h4>
+                            <p class="text-gray-600">حل المنازعات في أسرع وقت ممكن دون التعرض لطول إجراءات المحاكم</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <i class="fas fa-user-tie text-green-600 text-2xl mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">خبراء متخصصون</h4>
+                            <p class="text-gray-600">لجنة من المحكمين ذوي الخبرة العالية والتخصص في مختلف المجالات</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <i class="fas fa-handshake text-green-600 text-2xl mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">الحلول بالتراضي</h4>
+                            <p class="text-gray-600">التركيز على الوصول لحلول مقبولة من جميع الأطراف</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <i class="fas fa-shield-alt text-green-600 text-2xl mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">السرية التامة</h4>
+                            <p class="text-gray-600">ضمان الحفاظ على سرية المعلومات وخصوصية الأطراف</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">أنواع المنازعات</h3>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-r-4 border-green-500">
+                            <h4 class="font-semibold text-gray-800">المنازعات التجارية</h4>
+                            <p class="text-sm text-gray-600">نزاعات الشركات والعقود التجارية</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-r-4 border-blue-500">
+                            <h4 class="font-semibold text-gray-800">المنازعات المدنية</h4>
+                            <p class="text-sm text-gray-600">القضايا المدنية والعقارية</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-r-4 border-purple-500">
+                            <h4 class="font-semibold text-gray-800">منازعات العمل</h4>
+                            <p class="text-sm text-gray-600">نزاعات العمال وأصحاب العمل</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-r-4 border-yellow-500">
+                            <h4 class="font-semibold text-gray-800">المنازعات الأسرية</h4>
+                            <p class="text-sm text-gray-600">قضايا الأسرة والأحوال الشخصية</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-r-4 border-red-500">
+                            <h4 class="font-semibold text-gray-800">المنازعات المالية</h4>
+                            <p class="text-sm text-gray-600">النزاعات المصرفية والمالية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">آلية عمل مركز التحكيم</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-green-600 font-bold">1</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">تقديم الطلب</h4>
+                        <p class="text-sm text-gray-600">تقديم طلب التحكيم مع الوثائق اللازمة</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-green-600 font-bold">2</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">تشكيل اللجنة</h4>
+                        <p class="text-sm text-gray-600">اختيار المحكمين المتخصصين</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-green-600 font-bold">3</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">جلسات التحكيم</h4>
+                        <p class="text-sm text-gray-600">عقد الجلسات والاستماع للأطراف</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-green-600 font-bold">4</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">إصدار القرار</h4>
+                        <p class="text-sm text-gray-600">إصدار قرار التحكيم النهائي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Center Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center mb-12">
+                <div class="flex-shrink-0 ml-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-purple-600 text-2xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-2">مركز التدريب والتطوير</h2>
+                    <p class="text-xl text-gray-600">تطوير الكوادر القانونية والارتقاء بالمهارات المهنية</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">برامجنا التدريبية</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border-r-4 border-purple-500">
+                            <h4 class="font-bold text-gray-800 mb-3">قواعد الامتثال والحوكمة</h4>
+                            <p class="text-gray-600 mb-3">برامج متخصصة في تطبيق معايير الحوكمة والامتثال للقوانين واللوائح</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-purple-600">الحوكمة المؤسسية</span>
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-purple-600">إدارة المخاطر</span>
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-purple-600">مكافحة الفساد</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-lg border-r-4 border-red-500">
+                            <h4 class="font-bold text-gray-800 mb-3">علم النفس الجنائي</h4>
+                            <p class="text-gray-600 mb-3">دورات متقدمة في فهم السلوك الإجرامي وتقنيات التحقيق النفسي</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-red-600">تحليل الشخصية</span>
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-red-600">تقنيات الاستجواب</span>
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-red-600">كشف الكذب</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg border-r-4 border-green-500">
+                            <h4 class="font-bold text-gray-800 mb-3">الحس الأمني والوقائي</h4>
+                            <p class="text-gray-600 mb-3">تطوير المهارات الأمنية والوقائية للموظفين والعاملين</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-green-600">الأمن السيبراني</span>
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-green-600">إدارة الأزمات</span>
+                                <span class="bg-white px-3 py-1 rounded-full text-sm text-green-600">التخطيط الأمني</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">أساليب التدريب</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                            <i class="fas fa-chalkboard-teacher text-blue-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">ورش العمل التفاعلية</h4>
+                                <p class="text-sm text-gray-600">جلسات تدريبية تفاعلية مع الخبراء</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                            <i class="fas fa-users text-green-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">المؤتمرات المتخصصة</h4>
+                                <p class="text-sm text-gray-600">مؤتمرات دورية بمشاركة خبراء محليين ودوليين</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                            <i class="fas fa-laptop text-purple-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">التدريب الإلكتروني</h4>
+                                <p class="text-sm text-gray-600">منصات تدريب إلكترونية متطورة</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                            <i class="fas fa-certificate text-yellow-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">برامج الشهادات</h4>
+                                <p class="text-sm text-gray-600">شهادات معتمدة في التخصصات المختلفة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-3">المواد التدريبية الإضافية</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• صياغة العقود والاتفاقيات</li>
+                            <li>• التقاضي الإلكتروني</li>
+                            <li>• قانون الملكية الفكرية</li>
+                            <li>• التحكيم التجاري الدولي</li>
+                            <li>• قانون البيئة والاستدامة</li>
+                            <li>• الأخلاقيات المهنية للمحامين</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 contact-info">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">تواصل معنا</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">معلومات الاتصال</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">العنوان</h4>
+                                <p class="text-gray-600">شارع عمر المختار - مبنى نقابة المحامين<br>طرابلس - ليبيا</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                            <i class="fas fa-phone text-green-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">الهاتف</h4>
+                                <p class="text-gray-600">+218 945526797</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                            <i class="fas fa-envelope text-purple-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">البريد الإلكتروني</h4>
+                                <p class="text-gray-600"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f767179705f7e736b767d667e7132737a787e73317366">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                            <i class="fas fa-clock text-orange-600 text-xl ml-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">ساعات العمل</h4>
+                                <p class="text-gray-600">الأحد - الخميس: 8:00 - 16:00<br>الجمعة: 8:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <i class="fas fa-balance-scale text-6xl text-blue-600 mb-6"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">شركة التبيان</h3>
+                        <p class="text-gray-600 mb-6">
+                            نفخر بخدمة عملائنا وتقديم أفضل الحلول القانونية المتخصصة. 
+                            نحن هنا لمساعدتكم في جميع احتياجاتكم القانونية
+                        </p>
+                        <div class="flex justify-center space-x-4 space-x-reverse">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fab fa-facebook-f text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fab fa-twitter text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fab fa-linkedin-in text-blue-600 text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg mb-2">© 2025 شركة التبيان للاستشارات والخدمات القانونية</p>
+            <p class="text-blue-200">جميع الحقوق محفوظة - طرابلس، ليبيا</p>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95574ac53b3e3c3d","serverTiming":{"name":{"cfL4":true}},"version":"2025.6.2","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDnarQOS4kUFB3T4fkCdn3yZLyZZm3yPF23K3jvVgU9Q0ZlRLcpmSGc0AfgA5lc71WrLpZZTkQgDFdnIA7yrptyWiKFpQbQyz80o2yQG9XnaA8lWxg0iZqG%2Foqt1GYgrXidu0%2BVi2LYLSwyqUbIUjMC2m1qM6gD%2FEiBGr9qYDoVIuMNkMQk%2BnWJQvnkIGh4%2BGyLKQ7g%2F4zdvplDqkZlDI%2BSrapfvaHa1B9iFiq9Fo%2BUQi0QOBK9MhbZqV0qLKXdQyPAnYIFPgPrHjUfmGgCQ52Gtql23fkdj0ufiK5BkfhyNMSesp%2BQOFAc7jbUv1V58OwFr%2Ffo%2FLP%2FRlWr1pIdcZgY0z6mTS8Dz1qtULzdrBFrTZkvDuoFKxYBm7X3IaR7LIsiZWvOoF7ghrqzvZJFzwuVOkz5%2FFsNrwCJicSzYQ0oYfnTkLjHi1exLqpG82vKOJFcJaT%2BulBZl4IW23AQMdHGJqJCjt5HnTtyM0s5%2Fq4pvcbduDPz3TyXaVo%2F%2Ft1WgbcQ%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDnarQOS4kUFB3T4fkCdn3yZLyZZm3yPF23K3jvVgU9Q0ZlRLcpmSGc0AfgA5lc71WrLpZZTkQgDFdnIA7yrptyWiKFpQbQyz80o2yQG9XnaA8lWxg0iZqG/oqt1GYgrXidu0+Vi2LYLSwyqUbIUjMC2m1qM6gD/EiBGr9qYDoVIuMNkMQk+nWJQvnkIGh4+GyLKQ7g/4zdvplDqkZlDI+SrapfvaHa1B9iFiq9Fo+UQi0QOBK9MhbZqV0qLKXdQyPAnYIFPgPrHjUfmGgCQ52Gtql23fkdj0ufiK5BkfhyNMSesp+QOFAc7jbUv1V58OwFr/fo/LP/RlWr1pIdcZgY0z6mTS8Dz1qtULzdrBFrTZkvDuoFKxYBm7X3IaR7LIsiZWvOoF7ghrqzvZJFzwuVOkz5/FsNrwCJicSzYQ0oYfnTkLjHi1exLqpG82vKOJFcJaT+ulBZl4IW23AQMdHGJqJCjt5HnTtyM0s5/q4pvcbduDPz3TyXaVo//t1WgbcQ==";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
